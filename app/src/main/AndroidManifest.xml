@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.cheng.wang.shengshuiqi"
+    xmlns:android="http://schemas.android.com/apk/res/android">　　　　
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="圣水棋"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:name="com.cheng.wang.shengshui.aty.BlueToothFindOthersAty">
+        </activity>
+        <activity android:name="com.cheng.wang.shengshui.aty.InitAty"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cheng.wang.shengshui.aty.BlueToothGameAty"   android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name="com.cheng.wang.shengshui.aty.RenRenGameAty"></activity>
+        <activity android:name="com.cheng.wang.shengshui.aty.RankAty"></activity>
+        <activity android:name="com.cheng.wang.shengshui.aty.AboutActivity"></activity>
+    </application>
+
+</manifest>
